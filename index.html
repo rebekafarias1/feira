@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feira Fácil | Sua feira direto no app</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde: #36A03C;
+      --laranja: #F58613;
+      --cinza-fundo: #f7f7f7;
+      --branco: #ffffff;
+      --texto: #444;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--cinza-fundo);
+      color: var(--texto);
+    }
+
+    /* HEADER REESTILIZADO */
+    header {
+      background-color: #fff;
+      padding: 30px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .header-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .header-left h1 {
+      color: var(--verde);
+      font-size: 2.2em;
+      margin-bottom: 5px;
+    }
+
+    .header-left p {
+      font-size: 1.1em;
+      color: #666;
+    }
+
+    .logo {
+      max-height: 140px;
+      border-radius: 12px;
+      background-color: #fff;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.8em;
+      color: var(--verde);
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .hero img {
+      max-width: 500px;
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .cta-button {
+      background-color: var(--laranja);
+      color: #fff;
+      padding: 15px 35px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #e2750f;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--verde);
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+    }
+
+    .feature img {
+      max-width: 400px;
+      border-radius: 12px;
+    }
+
+    .feature-text {
+      max-width: 600px;
+    }
+
+    footer {
+      background-color: var(--verde);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero, .feature {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .feature img {
+        margin-top: 20px;
+      }
+
+      header {
+        text-align: center;
+        flex-direction: column;
+        padding: 40px 20px;
+      }
+
+      .logo {
+        margin-top: 20px;
+      }
+
+      .header-left {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho elegante -->
+  <header>
+    <div class="header-left">
+      <h1>Feira Fácil</h1>
+      <p>Sua feira digital. Frescor e praticidade no seu celular.</p>
+    </div>
+    <img src="logo.jpg" alt="Logo Feira Fácil" class="logo">
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Receba frutas, legumes e verduras direto da feira na sua casa</h1>
+      <p>Com o app Feira Fácil, você faz suas compras de produtos frescos com poucos cliques. Qualidade, economia e sustentabilidade em um só lugar.</p>
+      <button class="cta-button">Peça Agora</button>
+    </div>
+    <img src="feira.png" alt="Imagem de feira ou app">
+  </section>
+
+  <!-- Seção: O que é a Feira Fácil -->
+  <section>
+    <h2>O que é a Feira Fácil?</h2>
+    <div class="feature">
+      <div class="feature-text">
+        <p>Feira Fácil é um marketplace que conecta consumidores com feirantes locais. Através do nosso aplicativo, você pode escolher frutas, legumes e hortaliças diretamente das feiras da sua região e receber tudo no conforto da sua casa.</p>
+      </div>
+      <img src="feira2.png" alt="Imagem de feirante ou barraca de feira">
+    </div>
+  </section>
+
+  <!-- Seção: Como funciona -->
+  <section>
+    <h2>Como funciona?</h2>
+    <div class="feature">
+      <div class="feature-text">
+        <p>Nos dias de feira na sua região, feirantes parceiros disponibilizam seus produtos no app. Você escolhe o que deseja, monta sua cesta e um entregador leva tudo fresquinho até sua casa. Simples assim.</p>
+      </div>
+      <img src="celular.png" alt="Imagem ilustrando o processo">
+    </div>
+  </section>
+
+  <!-- Seção: Vantagens -->
+  <section>
+    <h2>Por que escolher a Feira Fácil?</h2>
+    <div class="feature">
+      <div class="feature-text">
+        <ul style="font-size: 1.1em; padding-left: 20px;">
+          <li>✔ Produtos frescos e selecionados</li>
+          <li>✔ Apoio aos feirantes locais</li>
+          <li>✔ Preços mais acessíveis que o supermercado</li>
+          <li>✔ Entrega econômica (apenas R$1 por km)</li>
+          <li>✔ Cestas personalizáveis</li>
+        </ul>
+      </div>
+      <img src="logo.jpg" alt="Imagem de cesta de feira ou cliente feliz">
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Feira Fácil. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
